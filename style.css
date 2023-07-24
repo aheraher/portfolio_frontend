@@ -1,0 +1,727 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Merriweather', serif; */
+    /* font-family: 'Oswald', sans-serif; */
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Merriweather', serif;
+
+}
+
+
+main {
+    overflow-x: hidden;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+#page1 {
+    width: 100%;
+    height: 150vh;
+    /* background-color: rgb(219, 212, 202); */
+    position: relative;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    /* background-color: rgb(40, 161, 185); */
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav .logo img {
+    width: 7rem;
+    margin: 0 6vw;
+
+}
+
+nav .btn button {
+    width: 8rem;
+    height: 3rem;
+    margin: 0 6vw;
+    border: 2px solid rgb(164, 102, 246);
+    border-radius: 25px;
+    font-size: 1.2rem;
+    color: rgb(161, 103, 237);
+    cursor: pointer;
+
+}
+
+nav .btn button:hover {
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    transition: 20ms ease;
+}
+
+.page .page1Content {
+    width: 100%;
+    height: calc(100% - 130px);
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.page1Content h1 {
+    margin-top: 4.5vw;
+    font-size: 4vw;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1.5vw;
+    font-weight: 600;
+
+}
+
+.page1Content p {
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
+    font-weight: 300;
+}
+
+.page1Content #dipak {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(117, 16, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.page1Content img {
+    margin-top: 5vw;
+    width: 13rem;
+    margin: auto;
+
+}
+
+
+.page1Content #hire img {
+    position: absolute;
+    top: 20rem;
+    right: 4rem;
+    transition: 30ms ease-out;
+    display: none;
+    scale: 0.5;
+
+
+}
+
+.page1Content #computerImg {
+    width: 80%;
+    /* background-color: red; */
+    display: none
+}
+
+.page1Content #computerImg img {
+    width: 60vw;
+}
+
+
+
+
+#page2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    /* margin-top: 10rem; */
+}
+
+#page2 .pagePurple {
+    width: 100%;
+    height: 100vh;
+    background-color: #7510F7;
+    margin-top: -09rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    margin: auto;
+}
+
+#page2 .pagePurple h3 {
+    font-size: 3vw;
+    /* margin-top: 5vw; */
+    font-family: 'Ubuntu', serif;
+    text-align: center;
+}
+
+#page2 .pagePurple p {
+    font-size: 1.4vw;
+    width: 80%;
+    margin-top: 1vw;
+    font-family: 'Ubuntu', serif;
+    line-height: 1.8rem;
+}
+
+.pagePurpleMiddle {
+    margin-top: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#jobAnimation {
+    margin-top: 8rem;
+    display: flex;
+    /* background-color: red; */
+    width: 70%;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid black;
+}
+
+#intern img {
+    animation: rotation 1s infinite linear;
+    width: 8rem;
+}
+
+#dogAnimation img {
+
+    width: 50%;
+}
+
+
+#page3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+
+}
+
+#page3 h1 {
+    font-size: 3rem;
+    font-family: 'Ubuntu', serif;
+    text-align: center;
+    color: #5BE9B9;
+}
+
+#skill {
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    /* background-color: yellow; */
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+
+.textSkill {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    font-family: 'Ubuntu', serif;
+    color: #7510F7;
+
+}
+
+
+.skillLevel {
+    font-size: 2.2rem;
+    position: absolute;
+    right: 4rem;
+    /* background-color: #ff0000; */
+    font-family: 'Ubuntu', serif;
+    transition: ease 1s;
+    animation: tilt-n-move-shaking 0.1s 2 1s;
+    display: none;
+    color: rgb(117, 18, 248);
+}
+
+#page3 .car {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    /* background-color: beige; */
+}
+
+#page3 .car img {
+    width: 15%;
+    /* background-color: red; */
+    margin-left: -1rem;
+
+
+
+
+
+}
+
+#page3 #car1 img {
+    margin-left: -0.2rem;
+    animation: tilt-n-move-shaking 0.25s 3 1s;
+
+
+}
+
+#page3 #car2 {
+    margin-left: 0.4rem;
+}
+
+#page3 #car3 {
+    margin-left: 1.4rem;
+}
+
+#page3 #car4 {
+    margin-left: 1.2rem;
+}
+
+#page3 #car5 {
+    padding-left: -1.8rem;
+    margin-left: -0.4rem;
+    /* background-color: #7510F7; */
+}
+
+
+#page3 .btnTest {
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+
+
+
+}
+
+#page3 .btnTest button {
+    width: 10rem;
+    height: 3.5rem;
+    margin: 0 6vw;
+    border: 2px solid #7510F7;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    color: #7510F7;
+    cursor: pointer;
+
+}
+
+
+#page3 .btnTest button:hover {
+    background-color: #7510F7;
+    color: rgb(255, 255, 255);
+    transition: 20ms ease;
+}
+
+
+#page4 {
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+    background-color: rgb(117, 18, 248);
+
+
+}
+
+/* #page4 #project {
+    color: white;
+} */
+
+#page5 {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(49, 252, 252); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-attachment: fixed; */
+
+
+
+}
+
+#page5 footer {
+    margin-top: -20vh;
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    /* background-color: #c68484; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .logo  img{
+    width: 20vw;
+    margin: 0 6vw;
+
+
+}
+
+footer h2 {
+    font-size: 3.3vw;
+    font-weight: 600;
+}
+
+#socialMediaLogo {
+    display: flex;
+    width: 20%;
+
+    justify-content: space-evenly;
+}
+
+.socialM {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    /* background-color: rgb(208, 90, 5); */
+    border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+
+.socialM a {
+    display: inline-block;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialM:hover {
+    background-color: #7510F7;
+
+}
+
+.socialM a i {
+    display: inline-block;
+    width: 1rem;
+    scale: 2;
+}
+
+#creatBy h3 {
+    font-size: 1.6vw;
+    font-size: 550;
+    /* margin-top: -5vh; */
+
+}
+
+#creatBy h3 span {
+    color: #7510F7;
+    font-weight: 750;
+}
+
+@keyframes tilt-n-move-shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(2px, 2px) rotate(2deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0eg);
+    }
+
+    75% {
+        transform: translate(-2px, 2px) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+
+
+
+
+
+
+/* small device */
+@media (max-width:500px) {
+    #page1 {
+        width: 100%;
+        height: 120vh;
+        overflow: hidden;
+    }
+
+    nav .logo img {
+        width: 5rem;
+        margin: 0 2vw;
+
+    }
+
+    nav {
+        width: 100%;
+        height: 100px;
+    }
+
+    nav .btn button {
+        width: 6rem;
+        height: 2.5rem;
+        margin: 0 5vw;
+        border: 2px solid rgb(164, 102, 246);
+        border-radius: 25px;
+        font-size: 1rem;
+        padding: 5px;
+        color: rgb(161, 103, 237);
+        cursor: pointer;
+
+    }
+
+
+     .page .page1Content {
+        width: 100%;
+        height: calc(100% - 100px);
+        /* background-color: chartreuse; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .page1Content h1 {
+        margin-top: 10vw;
+        font-size: 2rem;
+        text-align: center;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-family: 'Merriweather', serif;
+        margin-bottom: 3vw;
+
+    }
+
+    .page1Content p {
+        font-size: 3.6vw;
+
+        width: 15rem;
+
+        text-align: center;
+        /* background-color: red; */
+
+    }
+
+    .page1Content #dipak {
+        /* margin: auto; */
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-color: rgb(117, 16, 247);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+
+
+
+
+
+    }
+
+
+
+    .page1Content #computerImg {
+        /* width: 50vw;
+        background-color:cadetblue; */
+        display: none;
+
+    }
+
+    /* .page1Content #computerImg img {
+    height: 45%;
+  background-color: brown;
+
+} */
+
+
+    #page2 .pagePurple {
+        width: 100%;
+        height: 100vh;
+        background-color: #7510F7;
+        margin-top: -09rem;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        padding: 0 10px;
+        color: white;
+        margin: auto;
+    }
+
+
+
+    #page2 .pagePurple h3 {
+        font-size: 4.5vw;
+        /* margin-top: 5vw; */
+        font-family: 'Ubuntu', serif;
+        text-align: center;
+        /* letter-spacing: 2px; */
+    }
+
+    #page2 .pagePurple p {
+        width: 20rem;
+        /* background-color: chocolate; */
+        font-size: 3vw;
+
+        line-height: 1.1rem;
+        font-family: 'Ubuntu', serif;
+
+        text-align: center;
+
+    }
+
+    /*  neww        new update  */
+    #jobAnimation {
+        margin-top: 3rem;
+        display: flex;
+        /* background-color: red; */
+        width: 95%;
+        height: 20vh;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid black;
+
+    }
+
+    #intern img {
+        animation: rotation 1s infinite linear;
+        width: 7rem;
+        /* background-color: #8e4949; */
+        /* margin-left: rem; */
+        margin-right: 1rem;
+    }
+
+    #dogAnimation img {
+        display: initial;
+        width: 60%;
+    }
+
+    #page3 .car img {
+        width: 35%;
+        /* background-color: red; */
+        margin-left: -1rem;
+    }
+
+    #page4 {
+        width: 100%;
+        height: 130vh;
+        overflow: hidden;
+
+    }
+
+    .textSkill {
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+        animation: tilt-n-move-shaking 1s infinite 1s;
+
+
+    }
+
+    #page3 .car img {
+        display: none;
+    }
+
+    #page3 .btnTest button {
+        display: none;
+    }
+
+    .skillLevel {
+        font-size: 2rem;
+        position: absolute;
+        right: 4rem;
+        /* background-color: #ff0000; */
+        font-family: 'Ubuntu', serif;
+        transition: ease 1s;
+        animation: tilt-n-move-shaking 1s infinite 1s;
+        display: initial;
+        color: rgb(117, 18, 248);
+    }
+
+    .socialM {
+        width: 2.5;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        /* background-color: rgb(208, 90, 5); */
+        border: 2px solid #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5vw;
+    }
+
+    .socialM:hover {
+        background-color: #7510F7;
+    }
+
+    footer h2 {
+        font-size: 5.5vw;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    footer .logo img{
+        width: 11rem;
+        margin: 0 6vw;
+    }
+
+    #creatBy h3 {
+        font-size: 3.7vw;
+        font-weight: 500;
+        align-items: center;
+    }
+
+    #creatBy h3 span {
+        color: #7510F7;
+        font-weight: 750;
+
+        font-size: 4vw;
+    }
+}
